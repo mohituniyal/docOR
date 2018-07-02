@@ -6,10 +6,16 @@ import os
 import getpass
 import re
 import datetime
-
-if __name__ == '__main__':
+try:
     from Crypto.Hash import HMAC, SHA256
     import builtins
+except ImportError, e:
+    pass
+
+'''if __name__ == '__main__':
+    from Crypto.Hash import HMAC, SHA256
+    import builtins
+'''
 
 def epoch_time():
     return int((datetime.datetime.utcnow() - datetime.datetime(1970, 1, 1)).total_seconds()*1000)
