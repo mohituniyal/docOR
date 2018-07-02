@@ -1,2 +1,0 @@
-# docOR
-OpenReview-py documentation
